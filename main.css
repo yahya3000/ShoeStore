@@ -1,0 +1,319 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'geologica';
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* ---------------------------------------- */
+
+/* navigation bar */
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    height: 4rem;
+    font-weight: bolder;
+    user-select: none;
+    /* border: 2px solid black; */
+
+    /* position: absolute; top: 0; left: 0; right: 0; */
+}
+/* items in navigation bar */
+.nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    /* border: 2px solid red; */
+    height: 1.5rem;
+    padding: 5px;
+}
+.nav-item:hover{
+    cursor: pointer;
+}
+
+
+/* nike logo in nav */
+.logo{
+    width: 3.6rem;
+    height: 3.4rem;
+}
+
+
+
+/* ------------------------------------- */
+/* add to cart message */
+.addToCart{
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(216, 249, 211);
+    border-radius: 4px;
+    background-color: rgb(216, 249, 211);
+    width: 25%;
+    margin: auto;
+    height: 35px;
+    margin-top: 5px;
+}
+
+
+
+
+/* -------------------------------- */
+
+
+/* container for everything under nav */
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 2px solid black; */
+    width: 85%;
+    margin: auto;
+    margin-top: 55px;
+    height: 380px;
+}
+.shoes-item{
+    /* border: 2px solid red; */
+    width: 30%;
+    height: 380px;
+    cursor: pointer;
+}
+
+.shoes-div{
+    width: 90%;
+    margin: auto;
+    height: 16rem;
+    /* border: 2px solid blue; */
+}
+
+
+.NikeAirForce{
+    text-decoration: none;
+}
+#NikeAirJordan{
+    text-decoration: none;
+}
+#NikeSB-Dunk{
+    text-decoration: none;
+}
+
+
+
+.shoes-img{
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#name{
+    margin: 4px;
+    padding-left: 10px;
+    color: black;
+}
+#airforce, #jordan, #dunk{
+    color: grey;
+    margin: 4px;
+    padding-left: 10px;
+}
+
+.price-div{
+    /* border: 2px solid red; */
+    width: 90%;
+    margin: auto;
+    color: black;
+}
+
+/* -------------------------- */
+
+/* footer */
+#footer{
+    /* border: 2px solid orange; */
+    width: 100%;
+    margin: auto;
+    /* height: 55vh; */
+    height: 270px;
+    background-color: black;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "Helvetica";
+    margin-bottom: 0px;
+    margin-top: 95px;
+}
+
+/* top of the footer div */
+.top{
+    /* border: 2px solid red; */
+    display: flex;
+    /* height: 40vh; */
+    height: 200px;
+}
+
+/* middle of the footer */
+.middle{
+    /* border: 2px solid lightblue; */
+    display: flex;
+    justify-content: flex-end;
+    /* height: 7vh; */
+    height: 30px;
+}
+
+/* bottom of the footer */
+.bottom{
+    /* border: 2px solid rgb(206, 255, 71); */
+    /* height: 15vh; */
+    height: 30px;
+    display: flex;
+}
+
+/* the first div from left  */
+.div1, .div2, .div3, .div4, .div5{
+    /* border: 2px solid yellow; */
+    width: 20%;
+    height: 40vh;
+    color: white;
+    font-size: small;
+}
+.div5{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item1{
+    display: block;
+    /* border: 2px solid green; */
+    width: 85%;
+    margin: auto;
+    margin: 10px;
+}
+.item1>a{
+    color: white;
+    text-decoration: none;
+}
+
+/* thin text in the footer  */
+.text{
+    /* border: 2px solid rgb(204, 86, 86); */
+    margin: 10px;
+}
+.text>a{
+    text-decoration: none;
+    color: white;
+    font-size: x-small;
+    color: rgb(145, 145, 145);
+}
+.text>a:hover{
+    color: white;
+}
+
+/* text in div middle */
+.text2{
+    /* border: 2px solid lightsalmon; */
+    width: 30%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.text2>a{
+    color: rgb(145, 145, 145);
+    text-decoration: none;
+    font-size: x-small;
+}
+.text2>a:hover{
+    color: white;
+}
+
+/* text in the bottom left where the contry is located */
+.text3{
+    /* border: 2px solid deeppink; */
+    height: 10vh;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.uk{
+    /* border: 2px solid red; */
+    width: 30%;
+    display: flex;
+}
+
+/* link of the united kingdom location with an location arrow */
+.uk>a{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid lightgoldenrodyellow; */
+    color: white;
+    text-decoration: none;
+    height: 4vh;
+    width: 100%;
+    margin-left: 5px;
+    font-size: 12px;
+}
+.uk>a>i{
+    margin-bottom: 3px;
+}
+
+.rights{
+    color: white;
+    width: 50%;
+    height: 10vh;
+    /* border: 2px solid red; */
+}
+.rights>p{
+    /* border: 2px solid lightskyblue; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(145, 145, 145);
+    width: 100%;
+    height: 4vh;
+    font-size: smaller;
+}
+
+
+/* text in the bottom right, div4 */
+.text4{
+    /* border: 2px solid magenta; */
+    width: 60%;
+    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 22px;
+}
+.text4>a{
+    color: rgb(145, 145, 145);
+    font-size: smaller;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.text4>a:hover{
+    color: white;
+}
+
+
+/* div where the icons for social media are */
+.icons{
+    /* border: 2px solid red; */
+    margin: 10px;
+    font-size: x-large;
+    width: 40px;
+    height: 50px;
+    margin-top: 15px;
+}
+.icons>a{
+    color: rgb(145, 145, 145);
+}
+.icons>a:hover{
+    color: white;
+}
