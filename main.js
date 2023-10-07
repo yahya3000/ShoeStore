@@ -35,17 +35,21 @@ document.addEventListener("DOMContentLoaded", function () {
         shoes.forEach(shoe => {
             let mainDiv = document.createElement("div");
             mainDiv.setAttribute("class", "shoes-item");
-            mainDiv.innerHTML = ` <div onClick="addToCart(${shoe.id})" class="NikeAirForce">
-                <div class="shoes-div">
-                <img class="shoes-img" src="${shoe.image}" alt="">
-                </div>
-                <div class="text">
-                <p id="name">${shoe.name}</p>
-                <p id="airforce">${shoe.type}</p>
-                <p id="airforce">${shoe.color}</p>
-                <p class="price-div" > £ ${shoe.price}</p>
-                </div>
-            </div>`;
+            mainDiv.innerHTML = 
+                ` <div class="NikeAirForce">
+                    <div class="shoes-div">
+                        <img class="shoes-img" src="${shoe.image}" alt="">
+                    </div>
+                    <div class="text">
+                        <p id="name">${shoe.name}</p>
+                        <p id="airforce">${shoe.type}</p>
+                        <p id="airforce">${shoe.color}</p>
+                        <p class="price-div" > £ ${shoe.price}</p>
+                        <div  id="CartBtn">
+                            <button onClick="addToCart(${shoe.id})"> Add To Cart </button>
+                        </div>
+                    </div>
+                </div>`;
             shoeContainer.appendChild(mainDiv);
         });
     }

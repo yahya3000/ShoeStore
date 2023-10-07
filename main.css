@@ -52,16 +52,17 @@ body{
 /* add to cart message */
 .addToCart{
     /* display: flex; */
+    float: right;
     display: none;
     align-items: center;
     justify-content: center;
     border: 2px solid rgb(216, 249, 211);
     border-radius: 4px;
     background-color: rgb(216, 249, 211);
+    height: 35px;
     width: 25%;
     margin: auto;
-    height: 35px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 
@@ -77,7 +78,7 @@ body{
     /* border: 2px solid black; */
     width: 85%;
     margin: auto;
-    margin-top: 55px;
+    margin-top: 60px;
     height: 380px;
 }
 .shoes-item{
@@ -129,6 +130,35 @@ body{
     width: 90%;
     margin: auto;
     color: black;
+}
+
+
+/* add to cart btn */
+#CartBtn{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 5px;
+    /* border: 2px solid red; */
+}
+#CartBtn>button{
+    border: 1px solid red;
+    border-radius: 10px;
+    border: 5px solid  black;
+    background-color: black;
+    width: 100px;
+    height: 27px;
+    margin: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: small;
+    transition: 0.5s;
+}
+#CartBtn>button:hover{
+    background-color: rgb(74, 74, 74);
+    border: transparent;
+    transition: 0.5s;   
 }
 
 /* -------------------------- */
