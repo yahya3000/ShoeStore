@@ -36,8 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
             let mainDiv = document.createElement("div");
             mainDiv.setAttribute("class", "shoes-item");
             mainDiv.innerHTML = 
-                ` <div class="NikeAirForce">
-                    <div class="shoes-div">
+                `<div class="NikeAirForce">
+                    <div class="shoes-div" onClick="productPage()">
                         <img class="shoes-img" src="${shoe.image}" alt="">
                     </div>
                     <div class="text">
@@ -71,4 +71,10 @@ function addToCart(id) {
     }, 3000);
     
     console.log(cartItems);
+}
+
+
+// prroduct page 
+function productPage(){
+    window.location = "airforce.html";
 }
