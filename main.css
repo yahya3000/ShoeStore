@@ -83,33 +83,29 @@ body{
     /* border: 2px solid black; */
     width: 85%;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 50px;
     height: 380px;
 }
 .shoes-item{
     /* border: 2px solid red; */
     width: 30%;
-    height: 380px;
-    cursor: pointer;
+    height: 370px;
 }
 
 .shoes-div{
     width: 90%;
     margin: auto;
     height: 16rem;
-    /* border: 2px solid blue; */
+    /* border: 2px solid rgb(140, 255, 0); */
+    cursor: pointer;
 }
 
 
-.NikeAirForce{
+/* #NikeAirForce, #NikeAirJordan, #NikeSB-Dunk{
+    border: 2px solid blue;
     text-decoration: none;
-}
-#NikeAirJordan{
-    text-decoration: none;
-}
-#NikeSB-Dunk{
-    text-decoration: none;
-}
+    height: 350px;
+} */
 
 
 
@@ -144,7 +140,7 @@ body{
     justify-content: center;
     width: 90%;
     margin: auto;
-    margin-top: 5px;
+    margin-top: 10px;
     /* border: 2px solid red; */
 }
 #CartBtn>button{
@@ -180,7 +176,7 @@ body{
     font-weight: bold;
     font-family: "Helvetica";
     margin-bottom: 0px;
-    margin-top: 95px;
+    margin-top: 150px;
 }
 
 /* top of the footer div */
