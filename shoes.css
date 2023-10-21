@@ -21,8 +21,6 @@ body{
     font-weight: bolder;
     user-select: none;
     /* border: 2px solid black; */
-
-    /* position: absolute; top: 0; left: 0; right: 0; */
 }
 /* items in navigation bar */
 .nav-item{
