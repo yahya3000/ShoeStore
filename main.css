@@ -42,6 +42,9 @@ body{
 
 
 /* nike logo in nav */
+#logo{
+    cursor: context-menu;
+}
 .logo{
     width: 3.6rem;
     height: 3.4rem;
