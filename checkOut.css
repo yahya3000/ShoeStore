@@ -139,3 +139,12 @@ button:hover{
     margin-left: 8px;
     transition: 0.5s;
 }
+
+
+
+/* banner for when a field is empty */
+#emtyinputbanner{
+    display: none;
+    position: absolute; top: 390px; left: 715px;
+    color: red;
+}

@@ -13,7 +13,7 @@
         <div class="nav-item"> <img class="logo" src="img/swoosh-logo-black.jpeg" alt=""> </div>
         <a class="nav-item" href="home.html">Home</a>
         <a class="nav-item">Shops</a>
-        <a class="nav-item">Cart</a>
+        <a class="nav-item" href="checkOut.html">Check Out</a>
         
         <!-- icon search -->
         <div class="nav-item" id="search"> <i class="fa-solid fa-magnifying-glass"></i> </div>
@@ -28,11 +28,11 @@
         <header>Checkout</header>
         <div class="items">
             <div class="input-list">
-                <input type="text" name="" id="firstName" placeholder="First Name">
-                <input type="text" name="" id="lastName" placeholder="Last Name">
+                <input type="text" name="" id="firstName" placeholder="First Name" pattern="[a-zA-Z]">
+                <input type="text" name="" id="lastName" placeholder="Last Name" pattern="[a-zA-Z]">
             <br>
-                <input type="email" name="" id="email" placeholder="Email">
-                <input type="tel" name="" id="number" placeholder="Phone Number">
+                <input type="@" name="" id="email" placeholder="Email">
+                <input type="number" name="" id="number" placeholder="Phone Number">
                 <input type="text" name="" id="adress" placeholder="Adress">
             <br>    
             <br>   
@@ -47,6 +47,10 @@
     <!-- check out banner -->
     <div id="placeOrderBanner">
         <p>Thank you for placing an Order!</p>
+    </div>
+
+    <div id="emtyinputbanner">
+        <p>Field(s) can not be blank.</p>
     </div>
 
     <script src="checkOut.js"></script>

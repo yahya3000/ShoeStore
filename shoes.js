@@ -34,9 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
         let productId = sessionStorage.getItem("productId");
         var shoe = shoesList.find(x => x.id == productId);
             console.log(shoe);
-        let mainDiv = document.createElement("div");
 
-        mainDiv.innerHTML =
+        shoeContainer.innerHTML =
             `<div class="items">
                 <img class="img" src="${shoe.image}" alt="">
             </div>
@@ -45,17 +44,17 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="text">${shoe.type}</div>
                 <div class="price">${shoe.price}</div>
             <br>
-            <p id="aboutShoe">${shoe.desctiption}</p>
-            <br> <br>
                 <a class="button-add" href="cart.html">
                     <button class="add-bag"> Cart</button>
                 </a> 
                 <a class="button-checkOut" href="checkOut.html">
                     <button>Check Out</button>
                 </a>
+            <br> <br> <br> 
+                <p id="aboutShoe">${shoe.desctiption}</p>
             </div>`
 
-        shoeContainer.appendChild(mainDiv);
+        // shoeContainer.appendChild(mainDiv);
     }
 
     product();
