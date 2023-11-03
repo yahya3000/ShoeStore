@@ -53,10 +53,10 @@ body{
 /* container where the item is */
 .container{
     display: block;
-    width: 75%;
+    width: 860px;
     margin: auto;
-    height: 50vh;
-    /* margin-top: 45px;  */
+    /* height: 50vh;  */
+    border: 2px solid red;
 }
 
 .cart{
@@ -75,32 +75,39 @@ body{
     width: 90%;
     margin: auto;
     /* height: 80%; */
-    /* border: 2px solid red; */
+    border: 2px solid red;
 }
 
-/* the box left, with the img */
-.left{
-    margin: 5px;
-    width: 20%;
-}
-
-img{
-    width: 150px;
+/* div with the shoes  */
+#selectedShoes{
+    display: flex;
+    border: 2px solid rgb(20, 255, 67);
 }
 
 /* informarion about it */
 .info-div{
     display: block;
-    /* border: 2px solid black; */
+    width: 400px;
+    border: 2px solid rgb(208, 30, 30);
 }
+/* information seperatly for shoes in '.info-div' */
 .infos{
-    height: 50%;
     display: block;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    /* border: 2px solid red; */
+    height: 130px;
+    padding-top: 20px;
+    border: 2px solid red;
 }
 
+/* the box left, with the img of the shoes */ 
+.shoesImages{
+    margin: 5px;
+    width: 130px;
+    border: 2px solid cornflowerblue;
+} 
+
+img{
+    width: 130px;
+}
 .title{
     color: black;
     font-size: large;
@@ -131,14 +138,16 @@ img{
     padding: 2px;
 }
 
-/* .price-calculation{
+.price-calculation{
     border: 2px solid saddlebrown;
-} */
-.price-calculation1{
+
+}
+.price-calculation1, .price-calculation2, .price-calculation3{
     display: flex;
     margin: 4px;
+    margin-bottom: 10px;
 }
-.price-calculation2{
+/* .price-calculation2{
     display: flex;
     margin: 4px;
     margin-bottom: 10px;
@@ -148,7 +157,7 @@ img{
     margin: 4px;
     margin-bottom: 10px;
     margin-top: 10px;
-}
+} */
 
 .subtotal{
     width: 90%;
@@ -164,15 +173,36 @@ img{
 } */
 
 
-/* ------------------------------------------------------------------------------- */
+/* ----------------- */
 /* btn for 'continue shopping' and 'check out' */
-/* .buttons{
+.buttons{
+    float: right;
+    width: 300px;
+    height: 80px;
     border: 2px solid red;
-} */
+    margin-left: 450px;
+    margin-bottom: 30px;
+}
 
 /* coninue shopping */
-#continueShopping
-
+#continueShopping, #checkout{
+    border-radius: 10px;
+    background-color: black;
+    width: 250px;
+    height: 40px;
+    margin: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: medium;
+    margin-left: 20px;
+    transition: 0.5s;
+    user-select: none;
+}
+#continueShopping:hover, #checkout:hover{
+    background-color: rgb(74, 74, 74);
+    border: transparent;
+    transition: 0.5s;
+}
 
 /* -------------------------------------------------------------------------------- */
 
