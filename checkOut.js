@@ -23,12 +23,21 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Input console", firstName, lastName, email, number, adress);
         
         if(firstName !== "" || lastName !== "" || email !== "" || number !== "" || adress !== ""){
-            placeOrderBanner.style.display = "block";
-            console.log(firstName, lastName, email, number, adress);
+            if(firstName.length>30 || lastName.length>30 || email.length>30 || number.length>24 || adress.length>40){
+                emtyinputbanner.style.display = "block";
 
-            setTimeout(()=>{
-                placeOrderBanner.style.display = "none";
-            }, 6000);
+                setTimeout(()=>{
+                    emtyinputbanner.style.display = "none";
+                }, 6000);
+            }
+            else{
+                placeOrderBanner.style.display = "block";
+                console.log(firstName, lastName, email, number, adress);
+
+                setTimeout(()=>{
+                    placeOrderBanner.style.display = "none";
+                }, 6000);
+            }
         }
         else{
             emtyinputbanner.style.display = "block";

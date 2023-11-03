@@ -75,6 +75,7 @@ body{
     /* height: 60px; */
     border:2px solid rgb(244, 244, 244);
     border-radius: 6px;
+    user-select: none;
 }
 
 
@@ -93,8 +94,6 @@ body{
     margin-left: 4px;
     width: 450px;
     /* border: 2px solid darkorange; */
-    cursor:  pointer;
-    user-select: none;
 }
 
 /* info under the shoes name */
@@ -103,7 +102,7 @@ body{
     color: grey;
     width: 100%;
     padding-left: 2px;
-    user-select: none;
+    /* user-select: none; */
 }
 
 /* price of the shoe */
@@ -113,7 +112,7 @@ body{
     font-size: 15px;  
     margin: 4px;
     margin-left: 8px;
-    user-select: none;
+    /* user-select: none; */
 }
 
 /* text info about the shoe */
