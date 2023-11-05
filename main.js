@@ -59,10 +59,11 @@ document.addEventListener("DOMContentLoaded", function () {
 } );
 
 function addToCart(id) {
-    console.log("shoe added to cart", id);
+    console.log("Shoe added to cart", id);
 
     let cartItems = sessionStorage.getItem("cartItems");
-    sessionStorage.setItem("cartItems", id);
+    cartItems.push(id);
+    sessionStorage.setItem("cartItems", cartItems);
     let banner = document.getElementById("banner");
     banner.style.display = "flex";
 
@@ -71,6 +72,11 @@ function addToCart(id) {
     }, 3000);
     
     console.log(cartItems);
+
+
+    const cartItem = [ {
+
+    }];
 }
 
 

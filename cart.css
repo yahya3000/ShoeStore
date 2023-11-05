@@ -57,7 +57,7 @@ body{
     margin: auto;
     /* height: 50vh;  */
     /* border: 2px solid black; */
-    margin-top: 30px;
+    /* margin-top: 8px; */
 }
 
 /* title of the website */
@@ -69,23 +69,27 @@ body{
     margin: auto;
     /* font-size: x-large; */
     font-size: 28px;
+    /* border: 2px solid mediumblue; */
 }
 
 /* where the img and the text, price, etc. is */
 .item{
     display: flex;
     /* align-items: center; */
-    width: 90%;
+    /* width: 90%; */
+    width: 775px;
     margin: auto;
     /* height: 80%; */
     /* border: 2px solid rgb(0, 255, 187); */
 }
 
 /* div with the shoes  */
-#selectedShoes{
+/* #selectedShoes{
     display: flex;
-    /* border: 2px solid rgb(20, 255, 67); */
-}
+    border: 2px solid rgb(4, 64, 16);
+    width: 500px;
+} */
+
 
 /* informarion about it */
 .info-div{
@@ -98,7 +102,7 @@ body{
     display: flex;
     height: 90px;
     padding-top: 20px;
-    /* border: 2px solid red; */
+    /* border: 2px solid rgb(230, 0, 255); */
 }
 
 /* the box left, with the img of the shoes */ 
@@ -119,15 +123,16 @@ img{
 .title{
     color: black;
     /* font-size: large; */
+    width: 300px;
     font-size: 17px;
     margin: 4px;
+    /* border: 2px solid red; */
 }
 
 /* info under the shoes name */
 .text{
     color: grey;
     font-size: 14px;
-    /* margin: -4px; */
 }
 
 /* price of the shoe */
@@ -138,10 +143,17 @@ img{
 }
 
 /* ------------------------ */
+.right-div{
+    width: 500px;
+    /* border: 2px solid red; */
+}
+
+
 .summary{
-    width: 50%;
-    height: 90%;
-    margin-left: 40px;
+    width: 350px;
+    /* height: 90%; */
+    margin-left: 10px;
+    /* border: 2px solid blue; */
 }
 .header{
     /* font-size: x-large; */
@@ -156,6 +168,7 @@ img{
     display: flex;
     margin: 4px;
     margin-bottom: 10px;
+    /* border: 2px solid red; */
 }
 /* .price-calculation2{
     display: flex;
@@ -169,7 +182,7 @@ img{
     margin-top: 10px;
 } */
 
-.subtotal{
+.product, .subtotal{
     width: 90%;
     display: flex;
     align-items: center;
@@ -189,7 +202,8 @@ img{
     color: white;
     width: 280px;
     height: 105px;
-    margin-left: 650px;
+    margin-left: 45px;
+    margin-top: 30px;
 }
 /* btn for 'continue shopping' and 'check out' */
 .buttons{
@@ -225,22 +239,18 @@ img{
 /* footer */
 #footer{
     /* border: 2px solid orange; */
-    width: 100%;
-    margin: auto;
-    height: 55vh;
     background-color: black;
     font-size: 12px;
     font-weight: bold;
     font-family: "Helvetica";
     margin-bottom: 0px;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 /* top of the footer div */
 .top{
     /* border: 2px solid red; */
     display: flex;
-    height: 40vh;
 }
 
 /* middle of the footer */
@@ -248,21 +258,22 @@ img{
     /* border: 2px solid lightblue; */
     display: flex;
     justify-content: flex-end;
-    height: 7vh;
+    /* height: 7vh; */
+    height: 30px;
 }
 
 /* bottom of the footer */
 .bottom{
     /* border: 2px solid rgb(206, 255, 71); */
-    height: 15vh;
+    height: 30px;
     display: flex;
 }
 
 /* the first div from left  */
 .div1, .div2, .div3, .div4, .div5{
     /* border: 2px solid yellow; */
-    width: 20%;
-    height: 40vh;
+    width: 222px;
+    height: 200px;
     color: white;
     font-size: small;
 }
@@ -271,10 +282,32 @@ img{
     justify-content: space-evenly;
 }
 
+
+/* div where the icons for social media are */
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    margin: 10px;
+    font-size: x-large;
+    width: 40px;
+    height: 50px;
+    margin-top: 15px;
+}
+.icons>a{
+    color: rgb(145, 145, 145);
+}
+.icons>a:hover{
+    color: white;
+}
+
+
+
 .item1{
     display: block;
     /* border: 2px solid green; */
-    width: 85%;
+    width: 200px;
     margin: auto;
     margin: 10px;
 }
@@ -300,12 +333,12 @@ img{
 
 /* text in div middle */
 .text2{
-    /* border: 2px solid lightsalmon; */
-    width: 30%;
-    height: 7vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    /* border: 2px solid lightsalmon; */
+    width: 380px;
+    /* padding-left: 22px; */
 }
 .text2>a{
     color: rgb(145, 145, 145);
@@ -318,49 +351,39 @@ img{
 
 /* text in the bottom left where the contry is located */
 .text3{
-    /* border: 2px solid deeppink; */
-    height: 10vh;
-    width: 40%;
     display: flex;
     justify-content: space-evenly;
+    /* border: 2px solid deeppink; */
+    width: 400px;
 }
 .uk{
     /* border: 2px solid red; */
-    width: 30%;
+    width: 120px;
     display: flex;
 }
 
 /* link of the united kingdom location with an location arrow */
 .uk>a{
+    color: white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     /* border: 2px solid lightgoldenrodyellow; */
-    color: white;
-    text-decoration: none;
-    height: 4vh;
-    width: 100%;
-    margin-left: 5px;
+    width: 120px;
     font-size: 12px;
-}
-.uk>a>i{
-    margin-bottom: 3px;
+    text-decoration: none;
 }
 
 .rights{
     color: white;
-    width: 50%;
-    height: 10vh;
     /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .rights>p{
     /* border: 2px solid lightskyblue; */
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     color: rgb(145, 145, 145);
-    width: 100%;
-    height: 4vh;
     font-size: smaller;
 }
 
@@ -368,8 +391,7 @@ img{
 /* text in the bottom right, div4 */
 .text4{
     /* border: 2px solid magenta; */
-    width: 60%;
-    height: 5vh;
+    width: 710px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -383,22 +405,5 @@ img{
     margin-right: 10px;
 }
 .text4>a:hover{
-    color: white;
-}
-
-
-/* div where the icons for social media are */
-.icons{
-    /* border: 2px solid red; */
-    margin: 10px;
-    font-size: x-large;
-    width: 40px;
-    height: 50px;
-    margin-top: 15px;
-}
-.icons>a{
-    color: rgb(145, 145, 145);
-}
-.icons>a:hover{
     color: white;
 }
