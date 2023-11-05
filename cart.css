@@ -2,7 +2,7 @@
     margin: 0%;
     padding: 0%;
     font-family: 'geologica';
-    user-select: none;
+    /* user-select: none; */
 }
 
 body{
@@ -56,68 +56,78 @@ body{
     width: 860px;
     margin: auto;
     /* height: 50vh;  */
-    border: 2px solid red;
+    /* border: 2px solid black; */
+    margin-top: 30px;
 }
 
+/* title of the website */
 .cart{
     display: flex;
     padding: 5px;
     padding-left: 20px;
     width: 90%;
     margin: auto;
-    font-size: x-large;
+    /* font-size: x-large; */
+    font-size: 28px;
 }
 
 /* where the img and the text, price, etc. is */
 .item{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     width: 90%;
     margin: auto;
     /* height: 80%; */
-    border: 2px solid red;
+    /* border: 2px solid rgb(0, 255, 187); */
 }
 
 /* div with the shoes  */
 #selectedShoes{
     display: flex;
-    border: 2px solid rgb(20, 255, 67);
+    /* border: 2px solid rgb(20, 255, 67); */
 }
 
 /* informarion about it */
 .info-div{
     display: block;
     width: 400px;
-    border: 2px solid rgb(208, 30, 30);
+    /* border: 2px solid rgb(208, 30, 30); */
 }
 /* information seperatly for shoes in '.info-div' */
 .infos{
-    display: block;
-    height: 130px;
+    display: flex;
+    height: 90px;
     padding-top: 20px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 /* the box left, with the img of the shoes */ 
 .shoesImages{
-    margin: 5px;
-    width: 130px;
-    border: 2px solid cornflowerblue;
+    /* margin: 5px; */
+    width: 90px;
+    /* border: 2px solid cornflowerblue; */
+    user-select: none;
 } 
-
 img{
-    width: 130px;
+    width: 90px;
+}
+
+.description{
+    /* border: 2px solid red; */
+    width: 200px;
 }
 .title{
     color: black;
-    font-size: large;
+    /* font-size: large; */
+    font-size: 17px;
     margin: 4px;
 }
 
 /* info under the shoes name */
 .text{
     color: grey;
-    margin: 4px;
+    font-size: 14px;
+    /* margin: -4px; */
 }
 
 /* price of the shoe */
@@ -134,14 +144,14 @@ img{
     margin-left: 40px;
 }
 .header{
-    font-size: x-large;
+    /* font-size: x-large; */
+    font-size: 20px;
     padding: 2px;
 }
 
-.price-calculation{
+/* .price-calculation{
     border: 2px solid saddlebrown;
-
-}
+} */
 .price-calculation1, .price-calculation2, .price-calculation3{
     display: flex;
     margin: 4px;
@@ -174,28 +184,34 @@ img{
 
 
 /* ----------------- */
+.button-div{
+    /* border: 2px solid green; */
+    color: white;
+    width: 280px;
+    height: 105px;
+    margin-left: 650px;
+}
 /* btn for 'continue shopping' and 'check out' */
 .buttons{
-    float: right;
-    width: 300px;
-    height: 80px;
-    border: 2px solid red;
-    margin-left: 450px;
-    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red;     */
+    text-decoration: none;
 }
 
 /* coninue shopping */
 #continueShopping, #checkout{
-    border-radius: 10px;
+    color: white;
     background-color: black;
+    /* border: 1px solid black; */
+    border-radius: 10px;
     width: 250px;
     height: 40px;
-    margin: 5px;
-    cursor: pointer;
-    color: white;
+    margin: 5px 0px;
     font-size: medium;
-    margin-left: 20px;
     transition: 0.5s;
+    cursor: pointer;
     user-select: none;
 }
 #continueShopping:hover, #checkout:hover{

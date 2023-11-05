@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="text">${shoe.type}</div>
                 <div class="price">${shoe.price}</div>
             <br>
-                <a class="button-add" href="cart.html">
+                <a class="button-add" href="cart.html" onclick="addToBag">
                     <button class="add-bag"> Cart</button>
                 </a> 
                 <a class="button-checkOut" href="checkOut.html">
