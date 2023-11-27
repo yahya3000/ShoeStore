@@ -54,12 +54,12 @@ body{
 
 /* ------------------------------------- */
 /* add to cart message */
-.addToCart{
+.addToCart-banner{
     float: right;
     display: none;
     align-items: center;
-    position: sticky; top: 10px; left: 900px;
     justify-content: center;
+    position: sticky; top: 10px; left: 900px;
     border: 2px solid rgb(216, 249, 211);
     border-radius: 18px;
     background-color: rgb(216, 249, 211);
@@ -70,7 +70,21 @@ body{
     padding: 4px; padding-right: 3px; padding-left: 3px;
 }
 
-
+.banner2{
+    float: right;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: sticky; top: 10px; left: 900px;
+    border: 2px solid rgb(236, 123, 123);
+    border-radius: 18px;
+    background-color: rgb(236, 123, 123);
+    height: 25px;
+    width: 190px;
+    margin: auto;
+    margin-top: 3px;
+    padding: 4px; padding-right: 3px; padding-left: 3px;
+}
 
 
 /* -------------------------------- */

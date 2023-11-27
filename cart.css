@@ -55,9 +55,7 @@ body{
     display: block;
     width: 860px;
     margin: auto;
-    /* height: 50vh;  */
     /* border: 2px solid black; */
-    /* margin-top: 8px; */
 }
 
 /* title of the website */
@@ -67,7 +65,6 @@ body{
     padding-left: 20px;
     width: 90%;
     margin: auto;
-    /* font-size: x-large; */
     font-size: 28px;
     /* border: 2px solid mediumblue; */
 }
@@ -75,27 +72,16 @@ body{
 /* where the img and the text, price, etc. is */
 .item{
     display: flex;
-    /* align-items: center; */
-    /* width: 90%; */
-    width: 775px;
+    width: 785px;
     margin: auto;
-    /* height: 80%; */
     /* border: 2px solid rgb(0, 255, 187); */
 }
-
-/* div with the shoes  */
-/* #selectedShoes{
-    display: flex;
-    border: 2px solid rgb(4, 64, 16);
-    width: 500px;
-} */
-
 
 /* informarion about it */
 .info-div{
     display: block;
     width: 400px;
-    /* border: 2px solid rgb(208, 30, 30); */
+    /* border: 2px solid rgb(30, 95, 208); */
 }
 /* information seperatly for shoes in '.info-div' */
 .infos{
@@ -107,7 +93,6 @@ body{
 
 /* the box left, with the img of the shoes */ 
 .shoesImages{
-    /* margin: 5px; */
     width: 90px;
     /* border: 2px solid cornflowerblue; */
     user-select: none;
@@ -118,14 +103,28 @@ img{
 
 .description{
     /* border: 2px solid red; */
-    width: 200px;
+    width: 300px;
 }
+.description>div{
+    display: block;
+}
+
+#shoeDetail-removeIcon{
+    /* border: 2px solid lightseagreen; */
+    display: flex;
+}
+
+#shoeDetail{
+    width: 250px;
+    /* border: 2px solid black; */
+}
+
 .title{
     color: black;
-    /* font-size: large; */
-    width: 300px;
     font-size: 17px;
-    margin: 4px;
+    width: 300px;
+    padding-left: 2px;
+    /* margin: 2px; */
     /* border: 2px solid red; */
 }
 
@@ -133,30 +132,49 @@ img{
 .text{
     color: grey;
     font-size: 14px;
+    /* width: 200px; */
+    /* border: 2px solid deeppink; */
 }
 
 /* price of the shoe */
 .price{
+    display: flex;
+    justify-content: flex-end;
     color: black;
     font-size: 15px;  
     margin: 4px;
+    /* border: 2px solid burlywood; */
+    width: 90px;
+}
+
+/* icon to remove a shoe from cart */
+#remove-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    /* height: 80px; */
+}
+#delete-icon>i{
+    /* border:2px solid darkgreen; */
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 15px;
 }
 
 /* ------------------------ */
 .right-div{
-    width: 500px;
+    width: 365px;
     /* border: 2px solid red; */
 }
 
 
 .summary{
     width: 350px;
-    /* height: 90%; */
     margin-left: 10px;
     /* border: 2px solid blue; */
 }
 .header{
-    /* font-size: x-large; */
     font-size: 20px;
     padding: 2px;
 }
@@ -164,23 +182,12 @@ img{
 /* .price-calculation{
     border: 2px solid saddlebrown;
 } */
-.price-calculation1, .price-calculation2, .price-calculation3{
+.price-calculation-css, .price-div{
     display: flex;
     margin: 4px;
     margin-bottom: 10px;
     /* border: 2px solid red; */
 }
-/* .price-calculation2{
-    display: flex;
-    margin: 4px;
-    margin-bottom: 10px;
-}
-.price-calculation3{
-    display: flex;
-    margin: 4px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-} */
 
 .product, .subtotal{
     width: 90%;
