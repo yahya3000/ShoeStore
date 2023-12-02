@@ -98,4 +98,5 @@ function deleteItem(id) {
     sessionStorage.setItem("cartItems", JSON.stringify(cartItems));
 
     cart();
+    window.location.reload();
 }
