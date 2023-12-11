@@ -161,12 +161,12 @@ body{
     cursor: pointer;
     color: white;
     font-size: small;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 #CartBtn>button:hover{
     background-color: rgb(74, 74, 74);
     border: transparent;
-    transition: 0.5s;   
+    transition: 0.3s;   
 }
 
 /* -------------------------- */

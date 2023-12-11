@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         
         
-        total.innerHTML = '£'+ sum;
+        total.innerHTML = '£'+ Math.round(sum*100)/100;
     }
     
     
@@ -93,10 +93,20 @@ document.addEventListener("DOMContentLoaded", function () {
 function deleteItem(id) {
     let cartItems = JSON.parse(sessionStorage.getItem('cartItems')) || [];
     console.log();
-    var index = cartItems.indexOf(id);
-    delete cartItems[index];    
-    sessionStorage.setItem("cartItems", JSON.stringify(cartItems));
+    
+    if(cartItems.find(x=>x === id)){
+        var index = cartItems.indexOf(id);
+        delete cartItems[index];    
+        sessionStorage.setItem("cartItems", JSON.stringify(cartItems));
+        let banner = document.getElementById("banner");
+        banner.style.display = "flex";
+        
+        setTimeout(()=>{
+            banner.style.display = "none";
+        }, 3000);
+    }
+    else{}
 
-    cart();
+
     window.location.reload();
 }

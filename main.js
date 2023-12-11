@@ -68,7 +68,7 @@ function addToCart(id) {
         banner2.style.display = "flex";
         
         setTimeout(()=>{
-            banner.style.display = "none";
+            banner2.style.display = "none";
         }, 3000);
     }
     else{ 
@@ -83,12 +83,7 @@ function addToCart(id) {
         }, 3000);
     }
 
-    
-
-
-    const cartItem = [ {
-
-    }];
+    const cartItem = [{}];
 }
 
 

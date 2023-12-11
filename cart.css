@@ -47,9 +47,25 @@ body{
     width: 3.6rem;
 }
 
-/* ---------------------------- */
+/* ----------------------------------------- */
+/* item revome banner */
+.banner{
+    float: right;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: sticky; top: 10px; left: 900px;
+    border: 2px solid rgb(216, 249, 211);
+    border-radius: 18px;
+    background-color: rgb(216, 249, 211);
+    height: 35px;
+    width: 250px;
+    margin: auto;
+    margin-top: 3px;
+    padding: 4px; padding-right: 3px; padding-left: 3px;
+}
 
-
+/* ------------------------------------------ */
 /* container where the item is */
 .container{
     display: block;

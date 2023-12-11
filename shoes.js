@@ -1,3 +1,4 @@
+console.log("helloo world shoe")
 document.addEventListener("DOMContentLoaded", function () {
     const shoesList = [ {
         id: 1,
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
         image: "img/nikeDunkSb.jpeg"
     } ];
 
+    
 
     function product() {
         let shoeContainer = document.getElementById("shoeContainer");
@@ -42,20 +44,57 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="info-box">
                 <div class="title">${shoe.name}</div>
                 <div class="text">${shoe.type}</div>
-                <div class="price">${shoe.price}</div>
+                <div class="price">£ ${shoe.price}</div>
             <br>
-                <a class="button-add" href="cart.html" onclick="addToBag">
-                    <button class="add-bag"> Cart</button>
-                </a> 
-                <a class="button-checkOut" href="checkOut.html">
-                    <button>Check Out</button>
+            
+                <button class="button" onClick="addToBag(${shoe.id})">Add To Cart</button>
+
+                <a href="checkOut.html">
+                    <button class="button">Check Out</button>
                 </a>
-            <br> <br> <br> 
+
+            <br><br><br>
+
                 <p id="aboutShoe">${shoe.desctiption}</p>
             </div>`
 
         // shoeContainer.appendChild(mainDiv);
     }
+    
+    product(); 
 
-    product();
-} );
+});
+
+function addToBag(id) {
+        
+    let cartItems = JSON.parse(sessionStorage.getItem('cartItems')) || [];
+
+    if(cartItems.find(x=>x === id)){
+        sessionStorage.setItem("cartItems", JSON.stringify(cartItems));
+        let banner2 = document.getElementById("banner2");
+        banner2.style.display = "flex";
+        
+        setTimeout(()=>{
+            banner2.style.display = "none";
+        }, 3000);
+    }
+    else{ 
+        cartItems.push(id); 
+        console.log(cartItems);
+        sessionStorage.setItem("cartItems", JSON.stringify(cartItems));
+        let banner = document.getElementById("banner");
+        banner.style.display = "flex";
+    
+        setTimeout(()=>{
+            banner.style.display = "none";
+        }, 3000);
+    }
+
+    const cartItem = [{}];
+}
+
+// prroduct page 
+function productPage(id){
+    sessionStorage.setItem("productId", id);
+    window.location = "shoes.html";
+}

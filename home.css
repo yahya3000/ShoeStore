@@ -20,12 +20,17 @@ body{
 /* studnent discount */
 .discount{
     /* border: 2px solid cyan; */
+    color: black;
     width: 95%;
     height: 40px;
     margin: auto;
     font-weight: bold;
     font-size: small;
     margin-top: 15px;
+    text-decoration: none;
+}
+.discount:hover{
+    text-decoration: underline;
 }
 .discount>p , h3{
     display: flex;
@@ -34,9 +39,9 @@ body{
 
 /* link for the 3 shoes */
 .shoes{
+    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
-    /* border: 2px solid red; */
     width: 95%;
     height: 40px;
     margin: auto;
@@ -45,10 +50,10 @@ body{
     margin-top: 10px;
 }
 .shoes>a{
+    /* border: 2px solid rebeccapurple; */
     display: flex;
     align-items: center;
     width: 230px;
-    /* border: 2px solid rebeccapurple; */
     color: black;
     text-decoration: none;
 }
