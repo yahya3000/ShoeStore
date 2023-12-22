@@ -29,9 +29,8 @@
         <p>Item removed seccessfully</p>
     </div>
 
-    <br>
-    <br>
-    <br>
+    <br> <br> <br>
+
     <div class="container">
         <!-- title of the page -->
         <div class="cart">
@@ -40,9 +39,8 @@
 
         <div class="item">
 
-                <!-- product div at the left, with the img and the infos -->
-                <div class="info-div" id="info-div"></div>
-
+            <!-- product div at the left, with the img and the infos -->
+            <div class="info-div" id="info-div"></div>
             
             <div class="right-div">
 
@@ -50,26 +48,22 @@
                     <p class="header">Summary</p>
                     <br>
                     <div class="price-calculation" id="price-container">
-                        
                         <!-- container of the shoes -->
                         <div id="product-container"></div>
-                        
+
                         <div id="delivery-container">
                             <div class="price-calculation-css" class="price-calculation2">
                                 <p class="delivery">Estimated Delivery & Handling</p>
                                 <p class="delivery-price">Free</p>
                             </div>
                         </div>
-                        
                         <hr>
-
                         <div id="total-container">
                             <div class="price-div">
                                 <p class="subtotal">Total</p>
                                 <p class="price" id="total">£109.95</p>
                             </div>
-                        </div>
-                            
+                        </div>  
                     </div>
                 </div>
                 <!-- btn for continue shopping and check out -->
@@ -90,6 +84,14 @@
     </div>
     
     
+    <!-- pop-up for delete item in cart -->
+    <div class="pop-up" id="popUp">
+        <h1>Would you like to remove this item?</h1>   
+         <br>
+        <button onClick="deleteItem()">Yes</button>
+        <button onClick="cancelModel()">No</button>
+    </div>
+
 
 
     <!-- footer start -->

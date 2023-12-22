@@ -58,8 +58,8 @@ body{
     border: 2px solid rgb(216, 249, 211);
     border-radius: 18px;
     background-color: rgb(216, 249, 211);
-    height: 35px;
-    width: 250px;
+    height: 30px;
+    width: 220px;
     margin: auto;
     margin-top: 3px;
     padding: 4px; padding-right: 3px; padding-left: 3px;
@@ -164,13 +164,12 @@ img{
 }
 
 /* icon to remove a shoe from cart */
-#remove-icon{
+/* #remove-icon{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 40px;
-    /* height: 80px; */
-}
+} */
 #delete-icon>i{
     /* border:2px solid darkgreen; */
     margin-top: 30px;
@@ -181,6 +180,7 @@ img{
 /* ------------------------ */
 .right-div{
     width: 365px;
+    margin-top: -30px;
     /* border: 2px solid red; */
 }
 
@@ -256,6 +256,31 @@ img{
     border: transparent;
     transition: 0.5s;
 }
+
+
+/* ----------------------------------------------------------------------------------- */
+/* pop-up for delete item in cart  */
+.pop-up{
+    display: none;
+    width: 340px;
+    height: 150px;
+    position: absolute; top: 80px; left: 385px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background: white;
+    /* (1.horizontal offset/2.vertical offset/3.blurr/4.color speading) */
+    box-shadow: 5px 5px 3px 2px rgb(107, 107, 107);
+}  
+.pop-up>h1{
+    font-size: larger;
+    padding-left: 7px;
+    padding-top: 4px;
+}  
+.pop-up>button{
+    width: 90px;
+    height: 20px;
+    margin: 10px 35px;
+}  
 
 /* -------------------------------------------------------------------------------- */
 
