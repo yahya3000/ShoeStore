@@ -33,6 +33,9 @@ const shoesList = [ {
 function cart() {
 
     let cartItems = JSON.parse(sessionStorage.getItem('cartItems')) || [];
+    if(cartItems.length == 0){
+        window.location.href = "/main.html";
+    }
 
     console.log(cartItems);
     let infoDiv = document.getElementById("info-div");
@@ -129,6 +132,14 @@ function openModel(id) {
     let popUp = document.getElementById("popUp");
     popUp.style.display = "block";
 
+    let container = document.getElementById("container");
+    container.style.opacity = "0.35";
+    let nav = document.getElementById("nav");
+    nav.style.opacity = "0.35";
+    let footer = document.getElementById("footer");
+    footer.style.opacity = "0.35";
+    
+
     sessionStorage.setItem("delete-id", id);
 }
 
@@ -137,4 +148,11 @@ function cancelModel() {
     console.log("model is cancelled");
     let popUp = document.getElementById("popUp");
     popUp.style.display = "none";
+
+    let container = document.getElementById("container");
+    container.style.opacity = "1";
+    let nav = document.getElementById("nav");
+    nav.style.opacity = "1";
+    let footer = document.getElementById("footer");
+    footer.style.opacity = "1";
 }

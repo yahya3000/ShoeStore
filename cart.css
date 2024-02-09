@@ -51,7 +51,7 @@ body{
 /* item revome banner */
 .banner{
     float: right;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     position: sticky; top: 10px; left: 900px;
@@ -63,6 +63,7 @@ body{
     margin: auto;
     margin-top: 3px;
     padding: 4px; padding-right: 3px; padding-left: 3px;
+    opacity: 1;
 }
 
 /* ------------------------------------------ */

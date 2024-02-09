@@ -1,31 +1,5 @@
 console.log("helloo world shoe")
 
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
 document.addEventListener("DOMContentLoaded", function () {
     const shoesList = [ {
         id: 1,
@@ -70,19 +44,20 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
             <div class="info-box">
                 <div class="title">${shoe.name}</div>
-                <div class="text">${shoe.type}</div>
+                <div class="title-text">${shoe.type}</div>
                 <div class="price">£ ${shoe.price}</div>
             <br>
             
                 <button class="button" onClick="addToBag(${shoe.id})">Add To Cart</button>
 
-                <a href="checkOut.html">
-                    <button class="button">Check Out</button>
+                <a href="cart.html">
+                    <button class="button">Cart</button>
                 </a>
 
             <br><br><br>
-
-                <p id="aboutShoe">${shoe.desctiption}</p>
+                <div id="aboutShoe">
+                    <p>${shoe.desctiption}</p>
+                </div>
             </div>`
 
         // shoeContainer.appendChild(mainDiv);
