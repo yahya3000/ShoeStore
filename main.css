@@ -110,7 +110,7 @@ body{
     width: 90%;
     margin: auto;
     height: 16rem;
-    /* border: 2px solid rgb(140, 255, 0); */
+    border: 2px solid rgb(140, 255, 0);
     cursor: pointer;
 }
 
@@ -133,7 +133,7 @@ body{
 }
 
 .price-div{
-    /* border: 2px solid red; */
+    border: 2px solid red;
     width: 90%;
     margin: auto;
     color: black;
